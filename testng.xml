@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Restful-Booker Test Suite" parallel="false">
+    <test name="Smoke Tests">
+        <groups>
+        <run>
+            <include name = "smoke"/>
+        </run>
+        </groups>
+        <classes>
+        <class name="tests.Base.BaseTests" />
+        <class name="tests.auth.authTest" />
+        <class name="tests.Bookings.bookingCreationTests" />
+        <class name="tests.Bookings.bookingDeletetests" />
+        <class name="tests.Bookings.bookingRetrievalTests" />
+        <class name="tests.Bookings.bookingUpdateTests" />
+        </classes>
+    </test>
+        <test name="Regression Tests">
+        <groups>
+        <run>
+            <include name = "regression"/>
+        </run>
+        </groups>
+        <classes>
+        <class name="tests.Base.BaseTests" />
+        <class name="tests.auth.authTest" />
+        <class name="tests.Bookings.bookingCreationTests" />
+        <class name="tests.Bookings.bookingDeletetests" />
+        <class name="tests.Bookings.bookingRetrievalTests" />
+        <class name="tests.Bookings.bookingUpdateTests" />
+        </classes>
+    </test>
+    <test name="KnownBug Tests">
+        <groups>
+        <run>
+            <include name = "knownBug"/>
+        </run>
+        </groups>
+        <classes>
+        <class name="tests.auth.authTest" />
+        <class name="tests.Bookings.bookingCreationTests" />
+        <class name="tests.Bookings.bookingDeletetests" />
+        <class name="tests.Bookings.bookingRetrievalTests" />
+        <class name="tests.Bookings.bookingUpdateTests" />
+        </classes>
+    </test>
+
+</suite>
