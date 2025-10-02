@@ -52,7 +52,7 @@ public class bookingService {
             .spec(reqSpec)
             .pathParam("id", id)
             .when()
-            .get("/booking/{id}");
+            .get("https://restful-booker.herokuapp.com/booking/{id}");
         }
         public Response CreateBooking(RequestSpecification reqSpec, String firstname, String lastname, int totalprice, boolean depositpaid, String checkin, String checkout,
             String additionalneeds){
@@ -106,3 +106,4 @@ public class bookingService {
          .delete("/booking/{id}");
         }
 }
+
